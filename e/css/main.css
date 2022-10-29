@@ -1,0 +1,92 @@
+body{
+    margin: 0 auto;
+    max-width: 300px;
+    height: 80vh;
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; 
+    overflow: hidden;
+}
+
+.natasha{
+    max-width: 350px;
+    max-height: 350px;
+   animation-name: nata;
+   animation-duration: 10s;
+   animation-iteration-count:infinite;
+   animation-delay: 1s;
+   overflow: hidden;
+    
+}
+.natasha img{
+    width: 100%;
+    overflow: hidden;
+}
+@keyframes nata {
+    0%{
+        opacity: .8;
+        transform: scale(1);
+        
+    }
+   
+    30%{
+        opacity: 9;
+        transform: scale(1.1);
+        
+    }
+    
+    60%{
+        opacity: 1;
+        transform: scale(1.3);
+    }
+    
+    90%{
+        opacity: 1;
+        transform: scale(1.5);
+        animation-delay: 1s;
+       
+    }
+    100%{
+        transform: scale(.4); 
+    }
+    
+}
+.im{ 
+    position: absolute;
+    animation-name: iii;
+    animation-duration: 5s;
+    animation-iteration-count:1;
+    animation-delay: 9s;
+    opacity: 0;
+}
+.im img{
+    width: 80%;
+
+}
+h1{
+  
+    font-size: 30px;
+    color: antiquewhite;
+}
+@keyframes iii {
+    0%{
+        transform: translateY(200px);
+        opacity: .6;
+    }
+    90%{
+        transform: translateY(-370px);
+        opacity: 1;
+    }
+    100%{
+        display: none;
+    }
+};
+
